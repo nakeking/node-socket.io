@@ -1,11 +1,13 @@
-#介绍
-snake皮 express + socket.io 的小小聊天室。
+# erp
 
-##开始
-npm install express socket.io --save
+> snake皮的小小聊天室(nodejs + express + socket.io)
 
-node server.js
+## Build Setup
 
-访问 127.0.0.1:8080/index
+``` bash
+# install dependencies
+npm install --save socket.io express
 
+# listen:8080
+打开浏览器: 127.0.0.1:8080/index
 
