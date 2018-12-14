@@ -1,0 +1,235 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; background: rgba(204,204,204,0.2)}
+
+/*title*/
+.return{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: #222;
+	font-weight: bold;
+	background: #FFD306;
+}
+
+.icon{
+	position: relative;
+	flex: 0 0 40px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.icon img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+}
+
+.title{
+	flex: 1;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.more{
+	flex: 0 0 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.more img{
+	width: 40px;
+	height: 40px;
+}
+
+.user{
+	position: fixed;
+	top: 40px;
+	right: 0;
+	padding: 20px 20px;
+	line-height: 24px;
+	display: none;
+	background: #fff;
+}
+
+.user a{
+	color: #FFD306;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.kong{
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+}
+
+/*聊天框*/
+.messages { list-style-type: none; margin-top: 40px; padding: 10px 10px 0px 10px; text-align: center; }
+.messages .join{
+	display: inline-block;
+	padding: 0 10px;
+	color: #fff;
+	background: #ddd;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.item{
+	width: 100%;
+	line-height: 24px;
+	text-align: left;
+	clear: right;
+	display: flex;
+	flex-direction:row;
+	margin-bottom: 10px;
+}
+
+.item .left{
+	flex: 0 0 50px;
+	color:#666;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+}
+
+.item .icon{
+	flex: 0 0 12px;
+	height: 24px;
+	vertical-align: top;
+	padding-top: 3px;
+}
+
+.item .icon img{
+	display: inline-block;
+	width:12px;
+	height: 14px;
+	vertical-align: top;
+}
+
+.item .right{
+	padding: 0 10px;
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 5px;
+	word-break: break-all;
+}
+
+/*输入框*/
+.Userinfo{ display: flex; flex-direction: row;position: fixed; bottom: 0; width: 100%; }
+.Userinfo input { flex: 1; border: 1px solid #666; padding: 10px; width: 90%; margin-right: .5%;}
+.Userinfo button { flex: 0 0 100px;background: #FFD306; border: none; padding: 10px; }
+
+/*登入框*/
+.mask{
+	position: fixed;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 2;
+}
+
+.loginBox{
+	position: fixed;
+	top:50%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 80%;
+	margin-top: -45px;
+	background: #fff;
+	z-index: 3;
+	padding: 10px 10px;
+	height: 110px;
+}
+
+.loginBox input{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	color:#333;
+	border:0;
+	list-style: none;
+	outline-style: none;
+	background: rgba(204,204,204,0.2);
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.loginBox button{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	color:#333;
+	border:0;
+	list-style: none;
+	outline-style: none;
+	background:#FFD306;
+}
+
+.loginoutBox{
+	position: fixed;
+	top:50%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 80%;
+	margin-top: -45px;
+	background: #fff;
+	z-index: 3;
+	padding: 10px 10px;
+	height: 110px;
+	display: none;
+}
+
+.loginoutBox p{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color:#333;
+	margin-bottom: 10px;
+}
+
+.loginoutBox .confirm{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	font-size: 14px;
+	color:#333;
+	border:0;
+	list-style: none;
+	outline-style: none;
+	background:#fff;
+}
+
+.loginoutBox .cancel{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	font-size: 14px;
+	color:#fff;
+	border:0;
+	list-style: none;
+	outline-style: none;
+	background:#FFD306;
+}

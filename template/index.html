@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+  <link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body>
+  <div class="app">
+    <!--返回框-->
+    <div class="return">
+      <div class="icon logout">
+        <img src="/img/icon.png" alt="">
+      </div>
+      <div class="title">
+        <p>聊天室</p>
+      </div>
+      <div class="more">
+        <img src="/img/dian.jpg"/>
+      </div>
+      <!--用户start-->
+        <div class="user">
+          
+        </div>
+      <!--用户end-->
+    </div>
+    <!--返回框end-->
+    <!--聊天框start-->
+  	<ul id="messages" class="messages">
+
+    </ul>
+    <!--聊天框end-->
+    <!--输入框start-->
+    <div class="kong">
+    </div>
+    <div class="Userinfo">
+      <input class="msg" autocomplete="off" /><button type="button" class="submit">发送</button>
+    </div>
+    <!--输入框end-->
+    <!--登入框start-->
+    <div class="mask"></div>
+    <div class="loginBox">
+      <input type="text" name="username" placeholder="请输入用户名"/>
+      <button type="button" class="login">提交</button>
+    </div>
+    <!--登入框end-->
+    <!--退出框start-->
+    <div class="loginoutBox">
+      <p>你确认要退出吗？</p>
+      <button type="button" class="confirm">垃圾聊天室！退出</button><button type="button" class="cancel">爱我别走~</button>
+    </div>
+    <!--退出框end-->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script src="/script/jquery-3.2.1.min.js"></script>
+  <script src="/script/index.js"></script>
+</body>
+</html>
